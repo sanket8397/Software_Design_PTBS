@@ -1,4 +1,5 @@
 public interface ProductMenu {
+
     void showMenu();
     void showAddButton();
     void showViewButton();

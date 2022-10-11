@@ -1,4 +1,5 @@
 public class OfferingIterator implements ListIterator{
+
     @Override
     public boolean hasNext() {
         return false;
