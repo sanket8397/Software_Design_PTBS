@@ -1,18 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/ClassProductList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/OfferingMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ProductMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Reminder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TradingMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UserInfoItem.java" afterDir="false" />
+    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Created code skeleton for Facade design pattern.">
+      <change afterPath="$PROJECT_DIR$/src/Buyer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Seller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,7 +63,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665465149578</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Created code skeleton for Facade design pattern.">
+      <created>1665467910041</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665467910041</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -84,6 +86,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Created code skeleton for Facade design pattern." />
+    <option name="LAST_COMMIT_MESSAGE" value="Created code skeleton for Facade design pattern." />
   </component>
 </project>
