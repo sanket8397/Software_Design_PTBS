@@ -1,4 +1,4 @@
-public interface ListIterator {
+public interface ListIterator<O> {
 
     boolean hasNext();
     Object Next();
