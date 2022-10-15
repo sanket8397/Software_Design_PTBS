@@ -1,11 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Login Functionality added.">
+    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Implemented list iterator.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OfferingIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductIterator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +100,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665855381307</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Implemented list iterator.">
+      <created>1665856730627</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1665856730627</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +129,7 @@
     <MESSAGE value="Created code skeleton for Visitor design pattern." />
     <MESSAGE value="Added resources." />
     <MESSAGE value="Login Functionality added." />
-    <option name="LAST_COMMIT_MESSAGE" value="Login Functionality added." />
+    <MESSAGE value="Implemented list iterator." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented list iterator." />
   </component>
 </project>

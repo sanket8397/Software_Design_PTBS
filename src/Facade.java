@@ -6,8 +6,15 @@ public class Facade {
     private ClassProductList theProductList;
     private Person thePerson;
 
+    private UserInfoItem userInfoItem;
+
     public boolean login(){
         Login loginScreen = new Login();
+        if (loginScreen.isLoggedIn()){
+            userInfoItem.setUsername(loginScreen.getUser());
+            userInfoItem.setUserType(loginScreen.getUserType());
+            UserType = loginScreen.getUserType();
+        }
         return loginScreen.isLoggedIn();
     }
 
