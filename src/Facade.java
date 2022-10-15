@@ -7,7 +7,8 @@ public class Facade {
     private Person thePerson;
 
     public boolean login(){
-        return false;
+        Login loginScreen = new Login();
+        return loginScreen.isLoggedIn();
     }
 
     public void addTrading(){
