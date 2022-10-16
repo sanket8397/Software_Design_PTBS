@@ -2,13 +2,12 @@ import java.io.FileNotFoundException;
 
 public class Main {
 
-    public static void main(String[] args) {
-        System.out.println("Hello world!");
+    public static void main(String[] args) throws FileNotFoundException {
+
         Facade facade = new Facade();
         try {
-            facade.createProductList();
-            System.out.println("Hello world!");
-        } catch (FileNotFoundException e) {
+            facade.run();
+        } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
     }

@@ -1,13 +1,16 @@
 public class Product {
     private String name;
-    private String type;
+    private int category;
 
     public Product(){
 
     }
-    public Product(String name, String type){
+    public Product(String name, int category){
         this.name = name;
-        this.type = type;
+        this.category = category;
     }
 
+    public String getName() {
+        return name;
+    }
 }

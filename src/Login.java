@@ -8,7 +8,7 @@ public class Login extends JFrame {
 
     private String user;
     private int userType;
-    private boolean isLoggedIn = false;
+    public boolean isLoggedIn = false;
 
 
     private final Container loginContainer = getContentPane();
@@ -76,7 +76,6 @@ public class Login extends JFrame {
         }
         String username = userField.getText();
         String password = new String(passwordField.getPassword());
-        System.out.println(username + " " + password);
 
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
@@ -86,14 +85,14 @@ public class Login extends JFrame {
                     user = username;
                     System.out.println("Login Successful");
                     isLoggedIn = true;
-                    break;
                 }
             }
-
         }
-        JOptionPane.showMessageDialog(this, "Invalid Username or password");
-        userField.setText("");
-        passwordField.setText("");
+        if (!isLoggedIn) {
+            JOptionPane.showMessageDialog(this, "Invalid Username or password");
+            userField.setText("");
+            passwordField.setText("");
+        }
         scanner.close();
     }
 
@@ -105,7 +104,4 @@ public class Login extends JFrame {
         return userType;
     }
 
-    public boolean isLoggedIn() {
-        return isLoggedIn;
-    }
 }
