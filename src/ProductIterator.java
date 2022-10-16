@@ -26,4 +26,16 @@ public class ProductIterator implements ListIterator<Product> {
         if (index != -1)
             list.remove(index);
     }
+
+
+    public Product findByUserName(String productName){
+        MoveToHead();
+        while(hasNext()){
+            Next();
+            if(productName.equals(list.get(index).getName())){
+                return list.get(index);
+            }
+        }
+        return null;
+    }
 }

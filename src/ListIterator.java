@@ -4,4 +4,5 @@ public interface ListIterator<O> {
     Object Next();
     void MoveToHead();
     void Remove();
+
 }
