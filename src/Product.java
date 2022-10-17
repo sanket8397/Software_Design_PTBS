@@ -13,4 +13,13 @@ public class Product {
     public String getName() {
         return name;
     }
+
+    @Override
+    public String toString() {
+        return name;
+    }
+
+    public int getCategory() {
+        return category;
+    }
 }

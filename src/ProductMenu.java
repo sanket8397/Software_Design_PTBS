@@ -5,5 +5,5 @@ public interface ProductMenu {
     void showViewButton();
     void showRadioButton();
     void showLabels();
-    void showComboxes();
+    void showComboxes(ClassProductList products);
 }

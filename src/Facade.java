@@ -14,6 +14,8 @@ public class Facade {
     private UserInfoItem userInfoItem;
     private Login loginScreen;
 
+    private ProductCategoryUI productCategoryUI;
+
     public boolean login(UserInfoItem userInfoItem){
         if (loginScreen.isLoggedIn){
             userInfoItem.setUsername(loginScreen.getUser());
@@ -91,7 +93,15 @@ public class Facade {
     }
 
     public void productOperation(){
-
+        productCategoryUI = new ProductCategoryUI();
+        int productCategory = 0;
+        try {
+            productCategory = productCategoryUI.getProductCategory();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
+        thePerson.CreateProductMenu(productCategory);
+        thePerson.showMenu();
     }
 
     public void run() throws FileNotFoundException, InterruptedException {
@@ -106,5 +116,6 @@ public class Facade {
         }
         this.createUser(userInfoItem);
         this.AttachProductToUser();
+        this.productOperation();
     }
 }
