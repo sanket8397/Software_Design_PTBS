@@ -6,4 +6,6 @@ public interface ProductMenu {
     void showRadioButton();
     void showLabels();
     void showComboxes(ClassProductList products);
+
+    void makeFrameVisible();
 }

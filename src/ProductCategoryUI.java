@@ -30,6 +30,7 @@ public class ProductCategoryUI extends JFrame {
         while(!meatRadio.isSelected() & !produceRadio.isSelected()){
             TimeUnit.SECONDS.sleep(1);
         }
+        setVisible(false);
         return meatRadio.isSelected() ? 0 : 1;
     }
 }

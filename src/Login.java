@@ -85,6 +85,8 @@ public class Login extends JFrame {
                     user = username;
                     System.out.println("Login Successful");
                     isLoggedIn = true;
+                    setVisible(false);
+                    dispose();
                 }
             }
         }

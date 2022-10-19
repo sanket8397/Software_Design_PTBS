@@ -3,6 +3,7 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+@SuppressWarnings("unused")
 public class Facade {
 
     private int UserType;
@@ -72,9 +73,9 @@ public class Facade {
         while (scanner.hasNextLine()) {
             String line = scanner.nextLine();
             String[] tokens = line.split(":");
-            if (new String("Meat").equals(tokens[0]))
+            if ("Meat".equals(tokens[0]))
                 theProductList.add(new Product(tokens[1], 0));
-            else if (new String("Produce").equals(tokens[0]))
+            else if ("Produce".equals(tokens[0]))
                 theProductList.add(new Product(tokens[1], 1));
         }
         scanner.close();

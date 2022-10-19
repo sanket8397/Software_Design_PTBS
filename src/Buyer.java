@@ -13,6 +13,7 @@ public class Buyer extends Person{
         showAddButton();
         showRadioButton();
         showComboxes(productList);
+        theProductMenu.makeFrameVisible();
     }
 
     @Override

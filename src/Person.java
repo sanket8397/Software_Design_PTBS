@@ -21,7 +21,7 @@ public abstract class Person {
         theProductMenu.showLabels();
     }
     public void showComboxes(ClassProductList products){
-        theProductMenu = new ProduceProductMenu();
+//        theProductMenu = new ProduceProductMenu();
         theProductMenu.showComboxes(products);
     }
 }

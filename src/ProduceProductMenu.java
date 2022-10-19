@@ -9,20 +9,18 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
     JRadioButton meatRadio = new JRadioButton("Meat");
     JRadioButton produceRadio = new JRadioButton("Produce");
     private final ButtonGroup prdCatBtnGrp = new ButtonGroup();
-    JComboBox<String> productsCombo1 = new JComboBox<String>();
+    JComboBox<String> productsCombo = new JComboBox<String>();
     JLabel selectProduct = new JLabel("Select Product");
     JButton viewButton = new JButton("View");
     JButton addButton = new JButton("Add");
 
-
-    JComboBox cb;
 
 
     @Override
     public void showMenu(){
         setContentPane(productContainer);
         setSize(500,500);
-        setVisible(true);
+//        setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
     }
@@ -63,13 +61,19 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
         System.out.println(products);
         for (Product product : products){
             if (product.getCategory() == 1)
-                productsCombo1.addItem(product.getName());
+                productsCombo.addItem(product.getName());
             System.out.println("pqr");
         }
-        selectProduct.setBounds(50, 300,90,20);
-        productsCombo1.setBounds(300, 300,90,20);
+        selectProduct.setBounds(50, 250,90,20);
+//        productsCombo.setBounds(100, 300,90,20);
+//        productsCombo.setBounds(new Rectangle(100, 300,90,20));
+        productsCombo.setSize(90,20);
+        productsCombo.setPrototypeDisplayValue("Set ABC");
         productContainer.add(selectProduct);
-        productContainer.add(productsCombo1);
+        productContainer.add(productsCombo);
+    }
 
+    public void makeFrameVisible(){
+        setVisible(true);
     }
 }
