@@ -13,6 +13,8 @@ public class ClassProductList extends ArrayList<Product> {
     }
 
     public void accept(NodeVisitor visitor){
-
+        for(Product product: productIterator.list){
+            visitor.visitProduct(product);
+        }
     }
 }

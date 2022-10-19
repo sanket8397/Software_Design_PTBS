@@ -53,6 +53,10 @@ public class Facade {
 
     }
 
+    public void accept(NodeVisitor visitor){
+        visitor.visitFacade(this);
+    }
+
     public void createUser(UserInfoItem userinfoitem){
         if (userinfoitem.getUserType() == 0){
             thePerson = new Buyer(userInfoItem.getUsername());
