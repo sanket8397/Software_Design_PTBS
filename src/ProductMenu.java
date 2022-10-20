@@ -1,7 +1,7 @@
 public interface ProductMenu {
 
     void showMenu();
-    void showAddButton();
+    void showAddButton(String btnText);
     void showViewButton();
     void showRadioButton();
     void showLabels();

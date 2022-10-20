@@ -1,38 +1,38 @@
 public class ProductIterator implements ListIterator<Product> {
 
     ClassProductList list;
-    int index = -1;
+    int position = -1;
 
     public ProductIterator(ClassProductList list){
         this.list = list;
     }
     @Override
     public boolean hasNext() {
-        return index < (list.size() - 1);
+        return position < (list.size() - 1);
     }
 
     @Override
     public Object Next() {
-        return hasNext() ? list.get(++index) : null;
+        return hasNext() ? list.get(++position) : null;
     }
 
     @Override
     public void MoveToHead() {
-        index = -1;
+        position = -1;
     }
 
     @Override
     public void Remove() {
-        if (index != -1)
-            list.remove(index);
+        if (position != -1)
+            list.remove(position);
     }
 
     public Product findByUserName(String productName){
         MoveToHead();
         while(hasNext()){
             Next();
-            if(productName.equals(list.get(index).getName())){
-                return list.get(index);
+            if(productName.equals(list.get(position).getName())){
+                return list.get(position);
             }
         }
         return null;

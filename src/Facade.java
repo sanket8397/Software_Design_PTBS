@@ -6,6 +6,8 @@ import java.util.concurrent.TimeUnit;
 @SuppressWarnings("unused")
 public class Facade {
 
+    private static Facade facadeInstance;
+
     private int UserType;
     private Product theSelectedProduct;
     private int nProductCategory;
@@ -16,6 +18,17 @@ public class Facade {
     private Login loginScreen;
 
     private ProductCategoryUI productCategoryUI;
+
+    private Facade(){
+
+    }
+
+    public static Facade getInstance(){
+        if (facadeInstance == null){
+            facadeInstance = new Facade();
+        }
+        return facadeInstance;
+    }
 
     public boolean login(UserInfoItem userInfoItem){
         if (loginScreen.isLoggedIn){

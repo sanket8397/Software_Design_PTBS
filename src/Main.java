@@ -4,7 +4,7 @@ public class Main {
 
     public static void main(String[] args) throws FileNotFoundException {
 
-        Facade facade = new Facade();
+        Facade facade = Facade.getInstance();
         try {
             facade.run();
         } catch (InterruptedException e) {

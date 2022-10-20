@@ -11,9 +11,8 @@ public class Seller extends Person{
         showComboxes(productList);
         showLabels();
         showViewButton();
-        showAddButton();
+        showAddButton("Offer");
         showRadioButton();
-//        showComboxes(productList);
         theProductMenu.makeFrameVisible();
     }
 
@@ -27,6 +26,7 @@ public class Seller extends Person{
             System.out.println("Show Meat");
             theProductMenu = new MeatProductMenu();
         }
+
         return theProductMenu;
     }
 }

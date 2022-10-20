@@ -8,8 +8,8 @@ public abstract class Person {
     ClassProductList productList;
     public abstract void showMenu();
     public abstract ProductMenu CreateProductMenu(int productCategory);
-    public void showAddButton(){
-        theProductMenu.showAddButton();
+    public void showAddButton(String btnText){
+        theProductMenu.showAddButton(btnText);
     }
     public void showViewButton(){
         theProductMenu.showViewButton();

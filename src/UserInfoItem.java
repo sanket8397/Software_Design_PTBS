@@ -1,3 +1,6 @@
+/**
+ * @author sanketkapse
+ */
 public class UserInfoItem {
     private String username;
     private int userType;

@@ -3,16 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Implemented Facade pattern.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buyer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeatProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OfferingIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OfferingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProduceProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductCategoryUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductCategoryUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductIterator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Seller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Trading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInfoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInfoItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,13 +47,13 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "run.code.analysis.last.selected.profile": "pProject Default"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="" />
