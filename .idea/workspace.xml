@@ -1,12 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Changes in iterator pattern.">
+    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Changes in README">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeatProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProduceProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ReminderVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReminderVisitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -201,7 +198,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666284263753</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Added setlayout(null)">
+      <created>1666288414954</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1666288414954</updated>
+    </task>
+    <task id="LOCAL-00021" summary="Changes in README">
+      <created>1666288428576</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1666288428576</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -235,7 +246,9 @@
     <MESSAGE value="Updated README file." />
     <MESSAGE value="Called method for testing visitor pattern in Facade." />
     <MESSAGE value="Changes in iterator pattern." />
-    <option name="LAST_COMMIT_MESSAGE" value="Changes in iterator pattern." />
+    <MESSAGE value="Added setlayout(null)" />
+    <MESSAGE value="Changes in README" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in README" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

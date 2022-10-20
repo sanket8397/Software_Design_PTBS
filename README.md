@@ -2,20 +2,30 @@
 ## SER 515 - Fall 2022
 Design Patterns implemented:
 ### 1. Facade Pattern
-    **Class**: Facade
-    **File**: Facade.java
+    Class: Facade
+    File: Facade.java
     Facade is used for encapsulating a complex system into one single object.
     Facade is instantiated in Main.java file.
 ### 2. Bridge Pattern
-    Class:
+    Class: 
     File:
     Class:
     File:
 ### 3. Factory Pattern
-    Class:
-    File:
-    Class:
-    File:
+    Interface: ProductMenu
+    File: ProductMenu.java
+    Use: Commom=n Menu interface
+    Class: ProduceProductMenu
+    File: ProduceProductMenu.java
+    Use: Concrete implementation of Produce menu
+    Class: MeatProductMenu
+    File: MeatProductMenu.java
+    Use: Concrete Implementation of Meat Menu
+    Abstract Class: Person
+    File: Person.java
+    Use: Creator class which declares method that creates new factory objects
+    Buyer and Seller class: 
+    CreateProductMenu method creates new factory objects of MeatProductMenu or ProduceProductMenu depending on product category.
 ### 4. Iterator Pattern
     Class: ProductIterator
     File: ProductIterator.java
