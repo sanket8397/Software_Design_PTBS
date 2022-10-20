@@ -18,6 +18,7 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
     public void showMenu(){
         setContentPane(productContainer);
         setSize(500,500);
+        setLayout(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);
     }

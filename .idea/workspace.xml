@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Updated README file.">
+    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Changes in iterator pattern.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ClassProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassProductList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OfferingIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MeatProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProduceProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReminderVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReminderVisitor.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +187,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666255287941</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="Called method for testing visitor pattern in Facade.">
+      <created>1666284245903</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1666284245904</updated>
+    </task>
+    <task id="LOCAL-00019" summary="Changes in iterator pattern.">
+      <created>1666284263753</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1666284263753</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -213,14 +227,15 @@
     <MESSAGE value="Implemented UserInfoItem class." />
     <MESSAGE value="Implemented createProductList method." />
     <MESSAGE value="Implemented createUser and AttachProductToUser method." />
-    <MESSAGE value="Changes in iterator pattern." />
     <MESSAGE value="Implemented ProductCategoryUI for selecting product type" />
     <MESSAGE value="Implemented factory and bridge pattern." />
     <MESSAGE value="Implemented Facade pattern." />
     <MESSAGE value="Better refactoring of code." />
     <MESSAGE value="Changes in implementation of UI" />
     <MESSAGE value="Updated README file." />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated README file." />
+    <MESSAGE value="Called method for testing visitor pattern in Facade." />
+    <MESSAGE value="Changes in iterator pattern." />
+    <option name="LAST_COMMIT_MESSAGE" value="Changes in iterator pattern." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
