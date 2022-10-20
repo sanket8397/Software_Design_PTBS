@@ -12,7 +12,7 @@ public class ProductIterator implements ListIterator<Product> {
     }
 
     @Override
-    public Object Next() {
+    public Product Next() {
         return hasNext() ? list.get(++position) : null;
     }
 

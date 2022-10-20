@@ -15,7 +15,7 @@ public class OfferingIterator implements ListIterator<Offering>{
     }
 
     @Override
-    public Object Next() {
+    public Offering Next() {
         return hasNext() ? list.get(++position) : null;
     }
 

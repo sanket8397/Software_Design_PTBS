@@ -2,7 +2,7 @@ import java.util.ArrayList;
 
 public class ClassProductList extends ArrayList<Product> {
 
-    private ProductIterator productIterator;
+    private final ProductIterator productIterator;
 
     public ClassProductList(){
         productIterator = new ProductIterator(this);
@@ -13,8 +13,9 @@ public class ClassProductList extends ArrayList<Product> {
     }
 
     public void accept(NodeVisitor visitor){
-        for(Product product: productIterator.list){
-            visitor.visitProduct(product);
+        productIterator.MoveToHead();
+        while (productIterator.hasNext()){
+            visitor.visitProduct(productIterator.Next());
         }
     }
 }
