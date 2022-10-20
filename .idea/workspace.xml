@@ -1,21 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Implemented Facade pattern.">
+    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Updated README file.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassProductList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MeatProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/OfferingIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/OfferingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProduceProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ProductIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductIterator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Seller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UserInfoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInfoItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -182,7 +173,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666160310249</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Changes in implementation of UI">
+      <created>1666255269094</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1666255269094</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Updated README file.">
+      <created>1666255287941</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1666255287941</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -212,7 +217,10 @@
     <MESSAGE value="Implemented ProductCategoryUI for selecting product type" />
     <MESSAGE value="Implemented factory and bridge pattern." />
     <MESSAGE value="Implemented Facade pattern." />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Facade pattern." />
+    <MESSAGE value="Better refactoring of code." />
+    <MESSAGE value="Changes in implementation of UI" />
+    <MESSAGE value="Updated README file." />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated README file." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

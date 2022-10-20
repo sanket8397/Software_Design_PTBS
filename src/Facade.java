@@ -135,5 +135,7 @@ public class Facade {
         this.createUser(userInfoItem);
         this.AttachProductToUser();
         this.productOperation();
+        ReminderVisitor reminderVisitor = new ReminderVisitor();
+        theProductList.accept(reminderVisitor);
     }
 }
