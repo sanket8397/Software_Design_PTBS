@@ -56,6 +56,9 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
     public void showRadioButton(){
         meatRadio = new JRadioButton("Meat");
         produceRadio = new JRadioButton("Produce");
+        produceRadio.addActionListener(e -> {
+            facade.createMenu(1);
+        });
         meatRadio.setBounds(150,100,100,30);
         prdCatBtnGrp.add(meatRadio);
         produceRadio.setBounds(275,100,100,30);
@@ -97,14 +100,13 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
                 productString = productString + product.getName() + "\n";
             }
         }
-        JOptionPane.showMessageDialog(this, productString);
+        String title = "Products of " + facade.getUserName();
+        JOptionPane.showMessageDialog(this, productString, title, JOptionPane.INFORMATION_MESSAGE);
     }
 
     public void makeFrameVisible(){
         setVisible(true);
     }
-
-
 
     private void addProduct() throws IOException {
         if (selectedProduct != null){

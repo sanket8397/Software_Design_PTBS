@@ -10,7 +10,6 @@ public class Facade {
 
     private int UserType;
     private Product theSelectedProduct;
-    private int nProductCategory;
     private ClassProductList theProductList;
     private Person thePerson;
 
@@ -64,7 +63,9 @@ public class Facade {
     }
 
     public void remind(){
-
+        ReminderVisitor reminderVisitor = new ReminderVisitor();
+        theProductList.accept(reminderVisitor);
+        facadeInstance.accept(reminderVisitor);
     }
 
     public void accept(NodeVisitor visitor){
@@ -118,10 +119,13 @@ public class Facade {
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+        this.createMenu(productCategory);
+    }
+
+    public void createMenu(int productCategory){
         thePerson.CreateProductMenu(productCategory);
         thePerson.showMenu();
     }
-
     public void run() throws FileNotFoundException, InterruptedException {
         System.out.println("Run");
         createProductList();
@@ -137,8 +141,7 @@ public class Facade {
         this.productOperation();
         System.out.println("------------------------------------------");
         System.out.println("Implementing Visitor Pattern");
-        ReminderVisitor reminderVisitor = new ReminderVisitor();
-        theProductList.accept(reminderVisitor);
+        remind();
         System.out.println("------------------------------------------");
     }
 
