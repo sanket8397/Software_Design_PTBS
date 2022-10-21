@@ -64,4 +64,3 @@ Design Patterns implemented:
     It can be used this to pass attributes of Facade class to other classes.
     Used in Main.java file.
 
-Javadoc Path: <Folder Path>/Design_Pattern_PTBS/javadoc/package-summary.html
