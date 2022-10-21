@@ -1,5 +1,6 @@
 /**
  * This class is used to traverse products without exposing underlying representation.
+ * Implementation of Iterator design pattern.
  * @author sanketkapse
  */
 public class ProductIterator implements ListIterator<Product> {

@@ -1,4 +1,5 @@
 /**
+ * This class is concrete implementation of seller.
  * This class is used for Bridge Pattern and Factory Pattern.
  * @author sanketkapse
  */
@@ -20,6 +21,7 @@ public class Seller extends Person{
         theProductMenu.makeFrameVisible();
     }
 
+    //Factory method is implemented to create ProduceProductMenu or MeatProductMenu.
     @Override
     public ProductMenu CreateProductMenu(int productCategory){
         if (productCategory == 1){

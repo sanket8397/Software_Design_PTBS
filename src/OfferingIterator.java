@@ -1,5 +1,6 @@
 /**
  * This class is used to traverse offerings without exposing underlying representation.
+ * Implementation of Iterator design pattern.
  * @author sanketkapse
  */
 public class OfferingIterator implements ListIterator<Offering>{

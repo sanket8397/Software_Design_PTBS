@@ -7,10 +7,20 @@ Design Patterns implemented:
     Facade is used for encapsulating a complex system into one single object.
     Facade is instantiated in Main.java file.
 ### 2. Bridge Pattern
-    Class: 
-    File:
-    Class:
-    File:
+    Interface: ProductMenu
+    File: ProductMenu.java
+    Use: common Menu interface
+    Class: ProduceProductMenu
+    File: ProduceProductMenu.java
+    Use: Detailed implementation of GUI for produce menu
+    Class: MeatProductMenu
+    File: MeatProductMenu.java
+    Use: Detailed Implementation of GUI for meat menu
+    Abstract Class: Person
+    File: Person.java
+    Use: Abstract class which has high level implementation of GUI.
+    Buyer and Seller class: 
+    Uses Above methods to show complete GUI.
 ### 3. Factory Pattern
     Interface: ProductMenu
     File: ProductMenu.java
@@ -53,3 +63,5 @@ Design Patterns implemented:
     As we need only single instance of Facade.
     It can be used this to pass attributes of Facade class to other classes.
     Used in Main.java file.
+
+Javadoc Path: <Folder Path>/Design_Pattern_PTBS/javadoc/package-summary.html

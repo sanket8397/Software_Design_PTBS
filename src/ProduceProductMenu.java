@@ -10,6 +10,8 @@ import java.util.Objects;
 
 /**
  * This class implements Produce Product Menu.
+ * Factory and bridge design pattern is implemented here.
+ * It has detailed implementation of Produce Menu GUI methods.
  * @author sanketkapse
  */
 public class ProduceProductMenu extends JFrame implements ProductMenu{

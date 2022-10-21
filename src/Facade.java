@@ -4,7 +4,7 @@ import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
 /**
- * This class is implementation of Facade pattern.
+ * This class is implementation of Facade pattern.*
  * @author sanketkapse
  */
 @SuppressWarnings("unused")
@@ -23,6 +23,8 @@ public class Facade {
 
     }
 
+    //Singleton pattern is implemented.
+    //Facade instance is passed to MeatProductMenu and ProduceProductMenu for theProductList and username.
     public static Facade getInstance(){
         if (facadeInstance == null){
             facadeInstance = new Facade();
@@ -73,6 +75,7 @@ public class Facade {
         visitor.visitFacade(this);
     }
 
+    //Factory method is implemented to create buyer or seller.
     public void createUser(UserInfoItem userinfoitem){
         if (userinfoitem.getUserType() == 0){
             thePerson = new Buyer(userInfoItem.getUsername());
@@ -112,6 +115,7 @@ public class Facade {
         return new Product();
     }
 
+    // Creates Product Menu depending on Menu Category
     public void productOperation(){
         ProductCategoryUI productCategoryUI = new ProductCategoryUI();
         int productCategory;
@@ -127,6 +131,8 @@ public class Facade {
         thePerson.CreateProductMenu(productCategory);
         thePerson.showMenu();
     }
+
+    //This method gets called first.
     public void run() throws FileNotFoundException, InterruptedException {
         System.out.println("Run");
         createProductList();

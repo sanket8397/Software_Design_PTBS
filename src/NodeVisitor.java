@@ -1,5 +1,6 @@
 /**
- * This is abstract class which has declared visiting methods
+ * This is abstract class which has declared visiting methods.
+ * Implementation of visitor pattern.
  * @author sanketkapse
  */
 public abstract class NodeVisitor {

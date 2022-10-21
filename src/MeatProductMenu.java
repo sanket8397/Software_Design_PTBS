@@ -9,6 +9,8 @@ import java.util.Objects;
 
 /**
  * This class implements Meat Product Menu.
+ * Factory and bridge design pattern is implemented here.
+ * It has detailed implementation of Meat Menu GUI methods.
  * @author sanketkapse
  */
 public class MeatProductMenu extends JFrame implements ProductMenu {

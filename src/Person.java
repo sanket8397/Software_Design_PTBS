@@ -2,6 +2,8 @@
 /**
  * This class is parent class for buyer and seller.
  * This class declares the factory method CreateProductMenu.
+ * Factory and bridge design pattern is implemented here.
+ * It has high level implementation of GUI. (Bridge)
  * @author sanketkapse
  */
 @SuppressWarnings("UnusedReturnValue")
