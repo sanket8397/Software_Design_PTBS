@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.Objects;
 
 
 /**
@@ -81,27 +82,27 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
 
     @Override
     public void showComboxes(){
-        productsCombo = new JComboBox<String>();
+        productsCombo = new JComboBox<>();
         ClassProductList products = facade.getTheProductList();
         for (Product product : products){
             if (product.getCategory() == 1)
                 productsCombo.addItem(product.getName());
         }
         productsCombo.setBounds(new Rectangle(200, 150,150,20));
-        productsCombo.addActionListener(e -> selectedProduct = productsCombo.getSelectedItem().toString());
+        productsCombo.addActionListener(e -> selectedProduct = Objects.requireNonNull(productsCombo.getSelectedItem()).toString());
         productContainer.add(productsCombo);
     }
 
     public void showProducts(ClassProductList products) {
-        String productString = "";
+        StringBuilder productString = new StringBuilder();
         for (Product product : products) {
             if (product.getCategory() == 1) {
                 System.out.println(product.getName());
-                productString = productString + product.getName() + "\n";
+                productString.append(product.getName()).append("\n");
             }
         }
         String title = "Products of " + facade.getUserName();
-        JOptionPane.showMessageDialog(this, productString, title, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this, productString.toString(), title, JOptionPane.INFORMATION_MESSAGE);
     }
 
     public void makeFrameVisible(){

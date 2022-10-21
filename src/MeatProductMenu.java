@@ -7,6 +7,10 @@ import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
 import java.util.Objects;
 
+/**
+ * This class implements Meat Product Menu.
+ * @author sanketkapse
+ */
 public class MeatProductMenu extends JFrame implements ProductMenu {
 
     public Container productContainer = getContentPane();
@@ -74,7 +78,7 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
 
     @Override
     public void showComboxes(){
-        productsCombo = new JComboBox<String>();
+        productsCombo = new JComboBox<>();
         ClassProductList products = facade.getTheProductList();
         for (Product product : products){
             if (product.getCategory() == 0)
@@ -90,14 +94,14 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
 
 
     public void showProducts(ClassProductList products) {
-        String productString = "";
+        StringBuilder productString = new StringBuilder();
         for (Product product : products) {
             if (product.getCategory() == 0) {
-                productString = productString + product.getName() + "\n";
+                productString.append(product.getName()).append("\n");
             }
         }
         String title = "Products of " + facade.getUserName();
-        JOptionPane.showMessageDialog(this, productString, title, JOptionPane.INFORMATION_MESSAGE);
+        JOptionPane.showMessageDialog(this, productString.toString(), title, JOptionPane.INFORMATION_MESSAGE);
     }
 
     public void makeFrameVisible(){
