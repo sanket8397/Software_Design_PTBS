@@ -1,15 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Added View Menu functionality">
-      <change afterPath="$PROJECT_DIR$/resources/SellerOffering.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/buyerOffering.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/TempFile.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="555225b1-3b79-4816-bb55-cc26a5c9ce2a" name="Changes" comment="Implemented toggle functionality between produce and meat.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/UserProduct.txt" beforeDir="false" afterPath="$PROJECT_DIR$/resources/UserProduct.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Buyer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Buyer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ClassProductList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ClassProductList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Facade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Facade.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ListIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ListIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Login.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/MeatProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MeatProductMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ProduceProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProduceProductMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/NodeVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/NodeVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Offering.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Offering.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OfferingIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OfferingList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/OfferingMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/OfferingMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Person.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Person.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductCategoryUI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductCategoryUI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductIterator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductIterator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ProductMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ProductMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Reminder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Reminder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ReminderVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReminderVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Seller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Trading.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Trading.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TradingMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TradingMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UserInfoItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/UserInfoItem.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -242,7 +260,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666317661929</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Implemented toggle functionality between produce and meat.">
+      <created>1666323638651</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1666323638651</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -279,7 +304,8 @@
     <MESSAGE value="Added setlayout(null)" />
     <MESSAGE value="Changes in README" />
     <MESSAGE value="Added View Menu functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added View Menu functionality" />
+    <MESSAGE value="Implemented toggle functionality between produce and meat." />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented toggle functionality between produce and meat." />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

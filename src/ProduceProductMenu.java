@@ -5,15 +5,15 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
-import java.util.concurrent.TimeUnit;
+
 
 /**
+ * This class implements Produce Product Menu.
  * @author sanketkapse
  */
 public class ProduceProductMenu extends JFrame implements ProductMenu{
 
     Container productContainer = getContentPane();
-    private JLabel prdCatLabel;
     JRadioButton meatRadio;
     JRadioButton produceRadio;
     private final ButtonGroup prdCatBtnGrp = new ButtonGroup();
@@ -52,17 +52,13 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
         viewButton = new JButton("View");
         viewButton.setBounds(150, 50,90,20);
         productContainer.add(viewButton);
-        viewButton.addActionListener(e -> {
-            showProducts(products);
-        });
+        viewButton.addActionListener(e -> showProducts(products));
     }
 
     @Override
     public void showRadioButton(){
         meatRadio = new JRadioButton("Meat");
-        meatRadio.addActionListener(e -> {
-            facade.createMenu(0);
-        });
+        meatRadio.addActionListener(e -> facade.createMenu(0));
         meatRadio.setBounds(200,100,100,30);
         produceRadio = new JRadioButton("Produce");
         prdCatBtnGrp.add(meatRadio);
@@ -75,7 +71,7 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
 
     @Override
     public void showLabels(){
-        prdCatLabel = new JLabel("Product Category");
+        JLabel prdCatLabel = new JLabel("Product Category");
         prdCatLabel.setBounds(25,100,150,30);
         productContainer.add(prdCatLabel);
         selectProduct = new JLabel("Select Product");
@@ -92,9 +88,7 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
                 productsCombo.addItem(product.getName());
         }
         productsCombo.setBounds(new Rectangle(200, 150,150,20));
-        productsCombo.addActionListener(e -> {
-            selectedProduct = productsCombo.getSelectedItem().toString();
-        });
+        productsCombo.addActionListener(e -> selectedProduct = productsCombo.getSelectedItem().toString());
         productContainer.add(productsCombo);
     }
 

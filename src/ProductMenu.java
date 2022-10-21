@@ -1,3 +1,7 @@
+/**
+ * This is common product menu interface.
+ * @author sanketkapse
+ */
 public interface ProductMenu {
 
     void showMenu();

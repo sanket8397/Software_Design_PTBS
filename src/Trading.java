@@ -1,3 +1,7 @@
+/**
+ * Trading Class implements the acceptance method for visitor pattern.
+ * @author sanketkapse
+ */
 public class Trading {
 
     @SuppressWarnings("unused")

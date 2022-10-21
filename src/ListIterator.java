@@ -1,3 +1,8 @@
+/**
+ * This is interface for Iterator pattern
+ * @author sanketkapse
+ * @param <O> Object
+ */
 public interface ListIterator<O> {
 
     boolean hasNext();

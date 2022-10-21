@@ -1,3 +1,7 @@
+/**
+ * This class is used for Bridge Pattern and Factory Pattern.
+ * @author sanketkapse
+ */
 public class Buyer extends Person{
 
     public Buyer(String username){

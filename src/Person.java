@@ -1,6 +1,10 @@
-import javax.swing.*;
-import java.awt.*;
 
+/**
+ * This class is parent class for buyer and seller.
+ * This class declares the factory method CreateProductMenu.
+ * @author sanketkapse
+ */
+@SuppressWarnings("UnusedReturnValue")
 public abstract class Person {
     ProductMenu theProductMenu;
     int userType;

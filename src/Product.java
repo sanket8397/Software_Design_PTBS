@@ -1,3 +1,7 @@
+/**
+ * This class is created for storing product details.
+ * @author sanketkapse
+ */
 public class Product {
     private String name;
     private int category;

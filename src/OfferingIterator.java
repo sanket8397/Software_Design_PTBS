@@ -1,4 +1,5 @@
 /**
+ * This class is used to traverse offerings without exposing underlying representation.
  * @author sanketkapse
  */
 public class OfferingIterator implements ListIterator<Offering>{

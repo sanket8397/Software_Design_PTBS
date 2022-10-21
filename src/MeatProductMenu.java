@@ -5,6 +5,7 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.nio.file.StandardOpenOption;
+import java.util.Objects;
 
 public class MeatProductMenu extends JFrame implements ProductMenu {
 
@@ -47,18 +48,14 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
         viewButton = new JButton("View");
         viewButton.setBounds(150, 50,90,20);
         productContainer.add(viewButton);
-        viewButton.addActionListener(e -> {
-            showProducts(products);
-        });
+        viewButton.addActionListener(e -> showProducts(products));
     }
 
     @Override
     public void showRadioButton(){
         meatRadio = new JRadioButton("Meat");
         produceRadio = new JRadioButton("Produce");
-        produceRadio.addActionListener(e -> {
-            facade.createMenu(1);
-        });
+        produceRadio.addActionListener(e -> facade.createMenu(1));
         meatRadio.setBounds(150,100,100,30);
         prdCatBtnGrp.add(meatRadio);
         produceRadio.setBounds(275,100,100,30);
@@ -85,7 +82,7 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
         }
         productsCombo.setBounds(new Rectangle(150, 150, 150, 20));
         productsCombo.addActionListener(e -> {
-            selectedProduct = productsCombo.getSelectedItem().toString();
+            selectedProduct = Objects.requireNonNull(productsCombo.getSelectedItem()).toString();
             System.out.println(selectedProduct);
         });
         productContainer.add(productsCombo);
@@ -96,7 +93,6 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
         String productString = "";
         for (Product product : products) {
             if (product.getCategory() == 0) {
-                System.out.println(product.getName());
                 productString = productString + product.getName() + "\n";
             }
         }

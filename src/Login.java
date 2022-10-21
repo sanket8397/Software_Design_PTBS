@@ -4,6 +4,10 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * This class is used for implementation of Login
+ * @author sanketkapse
+ */
 public class Login extends JFrame {
 
     private String user;

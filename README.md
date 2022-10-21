@@ -14,7 +14,7 @@ Design Patterns implemented:
 ### 3. Factory Pattern
     Interface: ProductMenu
     File: ProductMenu.java
-    Use: Commom=n Menu interface
+    Use: common Menu interface
     Class: ProduceProductMenu
     File: ProduceProductMenu.java
     Use: Concrete implementation of Produce menu
@@ -27,6 +27,9 @@ Design Patterns implemented:
     Buyer and Seller class: 
     CreateProductMenu method creates new factory objects of MeatProductMenu or ProduceProductMenu depending on product category.
 ### 4. Iterator Pattern
+    Interface: ListIterator
+    File: ListIterator.java
+    Use: interface for Iterator pattern
     Class: ProductIterator
     File: ProductIterator.java
     Use: Implemented to traverse products without exposing underlying representation.
@@ -40,7 +43,7 @@ Design Patterns implemented:
     Use: Abstract class which has declared visiting methods
     Class: ReminderVisitor (Concrete Visitor)
     File: ReminderVisitor.java
-    Use: Implement methods declared in NodeVisitor for all visitors. Different versions of same behavior for each visitor
+    Use: Implement methods declared in NodeVisitor for all visitors. Different versions of same behavior for each visitor.
     Used in: Facade, Trading, ClassProduct in accept method. (Same behavior is implemented in all 3 classes instances)
     For tesing added in run method of Facade.java.
 

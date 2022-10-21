@@ -1,3 +1,7 @@
+/**
+ * This is abstract class which has declared visiting methods
+ * @author sanketkapse
+ */
 public abstract class NodeVisitor {
 
     public abstract void visitProduct(Product product);

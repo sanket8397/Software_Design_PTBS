@@ -1,3 +1,7 @@
+/**
+ * This class is used to traverse products without exposing underlying representation.
+ * @author sanketkapse
+ */
 public class ProductIterator implements ListIterator<Product> {
 
     ClassProductList list;

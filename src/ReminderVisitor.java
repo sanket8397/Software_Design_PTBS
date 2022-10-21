@@ -1,4 +1,6 @@
 /**
+ * This class implement methods declared in NodeVisitor for all visitors.
+ * Different versions of same behavior for each visitor.
  * @author sanketkapse
  */
 @SuppressWarnings("unused")

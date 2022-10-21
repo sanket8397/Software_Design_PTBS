@@ -3,20 +3,21 @@ import java.io.FileNotFoundException;
 import java.util.Scanner;
 import java.util.concurrent.TimeUnit;
 
+/**
+ * This class is implementation of Facade pattern.
+ * @author sanketkapse
+ */
 @SuppressWarnings("unused")
 public class Facade {
 
     private static Facade facadeInstance;
 
-    private int UserType;
     private Product theSelectedProduct;
     private ClassProductList theProductList;
     private Person thePerson;
 
     private UserInfoItem userInfoItem;
     private Login loginScreen;
-
-    private ProductCategoryUI productCategoryUI;
 
     private Facade(){
 
@@ -33,7 +34,7 @@ public class Facade {
         if (loginScreen.isLoggedIn){
             userInfoItem.setUsername(loginScreen.getUser());
             userInfoItem.setUserType(loginScreen.getUserType());
-            UserType = loginScreen.getUserType();
+            int userType = loginScreen.getUserType();
         }
         return loginScreen.isLoggedIn;
     }
@@ -112,8 +113,8 @@ public class Facade {
     }
 
     public void productOperation(){
-        productCategoryUI = new ProductCategoryUI();
-        int productCategory = 0;
+        ProductCategoryUI productCategoryUI = new ProductCategoryUI();
+        int productCategory;
         try {
             productCategory = productCategoryUI.getProductCategory();
         } catch (InterruptedException e) {

@@ -1,4 +1,5 @@
 /**
+ * This class is used to store userType and username after login
  * @author sanketkapse
  */
 public class UserInfoItem {
