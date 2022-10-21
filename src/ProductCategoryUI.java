@@ -13,6 +13,7 @@ public class ProductCategoryUI extends JFrame {
     public ProductCategoryUI(){
         setContentPane(productCatContainer);
         setSize(500,500);
+        setLayout(null);
         setVisible(true);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setResizable(false);

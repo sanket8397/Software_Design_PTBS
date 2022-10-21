@@ -2,10 +2,10 @@ public interface ProductMenu {
 
     void showMenu();
     void showAddButton(String btnText);
-    void showViewButton();
+    void showViewButton(ClassProductList products);
     void showRadioButton();
     void showLabels();
-    void showComboxes(ClassProductList products);
+    void showComboxes();
 
     void makeFrameVisible();
 }

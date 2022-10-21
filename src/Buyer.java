@@ -12,7 +12,7 @@ public class Buyer extends Person{
         showViewButton();
         showAddButton("Bid");
         showRadioButton();
-        showComboxes(productList);
+        showComboxes();
         theProductMenu.makeFrameVisible();
     }
 

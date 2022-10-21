@@ -12,7 +12,7 @@ public abstract class Person {
         theProductMenu.showAddButton(btnText);
     }
     public void showViewButton(){
-        theProductMenu.showViewButton();
+        theProductMenu.showViewButton(productList);
     }
     public void showRadioButton(){
         theProductMenu.showRadioButton();
@@ -20,8 +20,9 @@ public abstract class Person {
     public void showLabels(){
         theProductMenu.showLabels();
     }
-    public void showComboxes(ClassProductList products){
+    public void showComboxes(){
 //        theProductMenu = new ProduceProductMenu();
-        theProductMenu.showComboxes(products);
+        theProductMenu.showComboxes();
     }
+
 }

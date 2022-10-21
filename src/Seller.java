@@ -8,7 +8,7 @@ public class Seller extends Person{
     @Override
     public void showMenu() {
         theProductMenu.showMenu();
-        showComboxes(productList);
+        showComboxes();
         showLabels();
         showViewButton();
         showAddButton("Offer");

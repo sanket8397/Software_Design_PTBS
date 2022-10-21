@@ -1,10 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-import java.io.BufferedWriter;
-import java.io.FileWriter;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 
 public class MeatProductMenu extends JFrame implements ProductMenu {
 
@@ -17,6 +17,8 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
     JButton addButton;
 
     private String selectedProduct;
+    Facade facade = Facade.getInstance();
+
     @Override
     public void showMenu(){
         setContentPane(productContainer);
@@ -36,15 +38,18 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
                 throw new RuntimeException(ex);
             }
         });
-        addButton.setBounds(50, 400,90,20);
+        addButton.setBounds(50, 50,90,20);
         productContainer.add(addButton);
     }
 
     @Override
-    public void showViewButton(){
+    public void showViewButton(ClassProductList products){
         viewButton = new JButton("View");
-        viewButton.setBounds(150, 400,90,20);
+        viewButton.setBounds(150, 50,90,20);
         productContainer.add(viewButton);
+        viewButton.addActionListener(e -> {
+            showProducts(products);
+        });
     }
 
     @Override
@@ -68,19 +73,31 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
     }
 
     @Override
-    public void showComboxes(ClassProductList products){
+    public void showComboxes(){
         productsCombo = new JComboBox<String>();
+        ClassProductList products = facade.getTheProductList();
         for (Product product : products){
             if (product.getCategory() == 0)
                 productsCombo.addItem(product.getName());
         }
-        System.out.println(products);
-        productsCombo.setBounds(new Rectangle(50, 250, 200, 20));
+        productsCombo.setBounds(new Rectangle(150, 150, 150, 20));
         productsCombo.addActionListener(e -> {
             selectedProduct = productsCombo.getSelectedItem().toString();
             System.out.println(selectedProduct);
         });
         productContainer.add(productsCombo);
+    }
+
+
+    public void showProducts(ClassProductList products) {
+        String productString = "";
+        for (Product product : products) {
+            if (product.getCategory() == 0) {
+                System.out.println(product.getName());
+                productString = productString + product.getName() + "\n";
+            }
+        }
+        JOptionPane.showMessageDialog(this, productString);
     }
 
     public void makeFrameVisible(){
@@ -91,7 +108,12 @@ public class MeatProductMenu extends JFrame implements ProductMenu {
 
     private void addProduct() throws IOException {
         if (selectedProduct != null){
-            JOptionPane.showMessageDialog(this, "Hi" + " "+ selectedProduct);
+            Path path = Paths.get("resources/UserProduct.txt");
+            String name = facade.getUserName();
+            String str = name + ":" + selectedProduct;
+            Files.write(path, System.getProperty("line.separator").getBytes(), StandardOpenOption.APPEND);
+            Files.write(path, str.getBytes(), StandardOpenOption.APPEND);
+            facade.AttachProductToUser();
         }
     }
 

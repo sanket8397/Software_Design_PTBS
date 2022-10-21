@@ -1,5 +1,10 @@
 import javax.swing.*;
 import java.awt.*;
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.nio.file.StandardOpenOption;
 import java.util.concurrent.TimeUnit;
 
 public class ProduceProductMenu extends JFrame implements ProductMenu{
@@ -13,6 +18,8 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
     JLabel selectProduct;
     JButton viewButton;
     JButton addButton;
+    private String selectedProduct;
+    Facade facade = Facade.getInstance();
 
     @Override
     public void showMenu(){
@@ -26,15 +33,25 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
     @Override
     public void showAddButton(String btnText){
         addButton = new JButton(btnText);
+        addButton.addActionListener(e -> {
+            try {
+                addProduct();
+            } catch (IOException ex) {
+                throw new RuntimeException(ex);
+            }
+        });
         addButton.setBounds(50, 50,90,20);
         productContainer.add(addButton);
     }
 
     @Override
-    public void showViewButton(){
+    public void showViewButton(ClassProductList products){
         viewButton = new JButton("View");
         viewButton.setBounds(150, 50,90,20);
         productContainer.add(viewButton);
+        viewButton.addActionListener(e -> {
+            showProducts(products);
+        });
     }
 
     @Override
@@ -56,23 +73,49 @@ public class ProduceProductMenu extends JFrame implements ProductMenu{
         prdCatLabel.setBounds(25,100,150,30);
         productContainer.add(prdCatLabel);
         selectProduct = new JLabel("Select Product");
-        selectProduct.setBounds(50, 250,90,20);
+        selectProduct.setBounds(50, 150,90,20);
         productContainer.add(selectProduct);
     }
 
     @Override
-    public void showComboxes(ClassProductList products){
+    public void showComboxes(){
         productsCombo = new JComboBox<String>();
+        ClassProductList products = facade.getTheProductList();
         for (Product product : products){
             if (product.getCategory() == 1)
                 productsCombo.addItem(product.getName());
         }
-        productsCombo.setBounds(new Rectangle(100, 300,90,20));
-//        productsCombo.setSize(90,20);
+        productsCombo.setBounds(new Rectangle(200, 150,150,20));
+        productsCombo.addActionListener(e -> {
+            selectedProduct = productsCombo.getSelectedItem().toString();
+            System.out.println(selectedProduct);
+        });
         productContainer.add(productsCombo);
+    }
+
+    public void showProducts(ClassProductList products) {
+        String productString = "";
+        for (Product product : products) {
+            if (product.getCategory() == 1) {
+                System.out.println(product.getName());
+                productString = productString + product.getName() + "\n";
+            }
+        }
+        JOptionPane.showMessageDialog(this, productString);
     }
 
     public void makeFrameVisible(){
         setVisible(true);
+    }
+
+    private void addProduct() throws IOException {
+        if (selectedProduct != null){
+            Path path = Paths.get("resources/UserProduct.txt");
+            String name = facade.getUserName();
+            String str = name + ":" + selectedProduct;
+            Files.write(path, System.getProperty("line.separator").getBytes(), StandardOpenOption.APPEND);
+            Files.write(path, str.getBytes(), StandardOpenOption.APPEND);
+            facade.AttachProductToUser();
+        }
     }
 }

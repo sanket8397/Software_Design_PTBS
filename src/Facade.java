@@ -135,7 +135,18 @@ public class Facade {
         this.createUser(userInfoItem);
         this.AttachProductToUser();
         this.productOperation();
+        System.out.println("------------------------------------------");
+        System.out.println("Implementing Visitor Pattern");
         ReminderVisitor reminderVisitor = new ReminderVisitor();
         theProductList.accept(reminderVisitor);
+        System.out.println("------------------------------------------");
+    }
+
+    public ClassProductList getTheProductList(){
+        return theProductList;
+    }
+
+    public String getUserName(){
+        return userInfoItem.getUsername();
     }
 }
